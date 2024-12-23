@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio - Laura Sarmiento</title>
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <link href="https://cdn.jsdelivr.net/npm/ionicons@5.5.2/dist/ionicons/ionicons.css" rel="stylesheet">
+</head>
+<body>
+    <!-- Barra de Navegación -->
+    <nav>
+        <ul>
+            <li><a href="#hero">Inicio</a></li>
+            <li><a href="#about">Sobre Mí</a></li>
+            <li><a href="#education">Formación</a></li>
+            <li><a href="#experience">Experiencia</a></li>
+            <li><a href="#skills">Habilidades</a></li>
+            <li><a href="#contact">Contacto</a></li>
+        </ul>
+    </nav>
+
+    <!-- Sección Hero -->
+    <section id="hero">
+        <img src="assets/images/profile.jpg" alt="Foto de Perfil" class="profile-picture">
+        <h1>Laura Sarmiento</h1>
+        <p>Analista de Sistemas</p>
+
+        <span>
+            <a href="assets/cv-pdf.pdf" download>
+                <button class="btn">Descargar CV</button>
+            </a>
+        </span>
+    </section>
+
+    <!-- Sobre Mí -->
+    <section id="about">
+        <h2>Sobre Mí</h2>
+        <div class="profile-container">
+            <p>Soy una persona trabajadora, comunicativa y comprometida, amable y capaz de adaptarme a cada situación.</p>
+            <p>Busco una oportunidad laboral en la que pueda demostrar mi compromiso y capacidad de trabajo.</p>
+        </div>
+    </section>
+
+    <!-- Formación -->
+    <section id="education">
+        <h2>Formación Académica</h2>
+        <ul>
+            <li><strong>Tecnicatura Superior en Análisis de Sistemas</strong> - ISFDyT Nº 44 (2022-2024)</li>
+            <li><strong>Tecnicatura Superior en Instrumentación Quirúrgica</strong> - Cruz Roja Argentina (2013-2015)</li>
+            <li><strong>Bachiller en Ciencias Naturales</strong> - E.E.M Nº 19 (2007-2009)</li>
+        </ul>
+    </section>
+
+    <!-- Experiencia Laboral -->
+    <section id="experience">
+        <h2>Experiencia Laboral</h2>
+        <ul>
+            <li><strong>Auxiliar en Educación</strong> - Múltiples instituciones (2021-Actualidad)</li>
+            <li><strong>Ayudante de Cocina</strong> - Hogar de la Tercera Edad (2020-2022)</li>
+            <li><strong>Acompañante de personas mayores</strong> - Acompañante de personas mayores (2015-2019)</li>
+            <li><strong>Instrumentadora Quirúrgica</strong> - Prácticas en varios hospitales (2013-2015)</li>
+        </ul>
+    </section>
+
+    <!-- Habilidades -->
+    <section id="skills">
+        <h2>Habilidades</h2>
+        <ul>
+            <li>Java</li>
+            <li>HTML y CSS</li>
+            <li>MySQL</li>
+            <li>Eclipse</li>
+            <li>Inglés Intermedio</li>
+        </ul>
+    </section>
+
+    <section id="projects">
+        <h2>Proyectos</h2>
+        <div class="project">
+            <img src="assets/images/cuidado-del-cuerpo.jpeg" alt="Foto de Perfil" class="cuidado-del-cuerpo">
+            <h3>App sobre el cuidado del cuerpo</h3>
+            <p>Diseñé un juego educativo en AppInventor para enseñar buenos hábitos relacionados con el cuidado personal. Son historias interactivas, donde vas aprendiendo en cada una de ellas como cuidar tu cuerpo.</p>
+        </div>
+        <div class="container">
+            <div class="project-container">
+                <span>
+                    <a href="https://github.com/" target="_blank">
+                        <button class="btn">GitHub</button>
+                    </a>
+                    <a href="https://github.com/" target="_blank">
+                        <button class="btn">Demo</button>
+                    </a>
+                </span>      
+             </div>
+
+    </section>
+
+    <!-- Sección Contacto -->
+    <section id="contact"></section>
+        <h2>Contacto</h2>
+        <p>¿Te interesa saber más o trabajar conmigo? ¡Contáctame!</p>
+        <form action="#" method="post">
+            <input type="text" name="name" placeholder="Tu nombre" required>
+            <input type="email" name="email" placeholder="Tu correo" required>
+            <textarea name="message" rows="5" placeholder="Tu mensaje" required></textarea>
+            <button type="submit">Enviar</button>
+        </form>
+    </section>
+
+    <!-- Sección de redes sociales -->
+    <div class="social-media">
+        <a href="https://linkedin.com/in/laura-sarmiento-199176304/" target="_blank"><ion-icon name="logo-linkedin"></ion-icon></a>
+        <a href="https://github.com/LalySar7707" target="_blank"><ion-icon name="logo-github"></ion-icon></a>
+        <a href="mailto:lalysar.77-07@gmail.com" class="email"><ion-icon name="mail-outline"></ion-icon></a>
+   
+    </div>
+
+     <!-- Volver al comienzo -->
+     <button id="back-to-top">&#8679; Inicio</button>
+
+    <!-- Sección Footer -->
+    <footer>
+        <p>&copy; 2024 Laura Sarmiento. Todos los derechos reservados.</p>
+    </footer>
+
+    <!-- Website scripts -->
+    <script src="assets/js/app.js"></script>
+     <!-- Website scripts -->
+     <script>
+        document.getElementById('back-to-top').onclick = function() {
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        };
+    </script>
+
+    <!-- Ion icons scripts -->
+    <script type="module" src="https://cdn.jsdelivr.net/npm/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://cdn.jsdelivr.net/npm/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+</body>
+</html>
